@@ -23,3 +23,15 @@ console.log("After swap:",value1,value2);
 }
 swapVariables(num1,num2);
 swapVariables(name1,name2);
+
+//function with argument and return va\lue
+
+
+function addition(num1, num2) {
+    var result  = num1 + num2;// result = 300
+    return result;
+}
+var returnValue = addition(100, 200);
+console.log("Addition of number is: ", returnValue);
+var returnResult = addition(890.400, 600.3456);
+console.log("Addition of number is: ", returnResult);
