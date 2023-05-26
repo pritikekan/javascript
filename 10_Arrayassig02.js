@@ -31,26 +31,25 @@ let arrayLength=arrayNumbers.length;
  }
  console.log(`---------------------------------------------------------`);
  console.log(`6. Even position element and sum it`);
+ let sumA=0;
  for (const index in arrayNumbers) {
     if (index%2==0) {
-     console.log(`Even position :"${arrayNumbers[index]}"`)
+    sumA=sumA+arrayNumbers[index];
     }
     }
-    let sum1=20+40+23+29+60+11;
-    console.log(`sum of  even array:${sum1}`);
+    console.log(`sum of  even array:${sumA}`);
     console.log(`---------------------------------------------------------`);
     console.log(`7. Odd position element and sum it`);
+    let sumB=0;
     for (const index in arrayNumbers) {
-        let sum2=0;
         if (index%2==1) {
-         console.log(`odd position :"${arrayNumbers[index]}"`)
+         sumB=sumB+arrayNumbers[index];
         }
         }
-        sum2=31+25+11+9+2;
-        console.log(`sum of odd array:${sum2}`);
+        console.log(`sum of odd array:"${sumB}"`);
         console.log(`---------------------------------------------------------`);
         console.log(`8. sum of all element in array`);
-        console.log(`sum of all element:"${sum1+sum2}"`);
+        console.log(`sum of all element:"${sumA+sumB}"`);
         console.log(`---------------------------------------------------------`);
         console.log(`9. find the number which multiple of 5`);
         for (const element of arrayNumbers) {
